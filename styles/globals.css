@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.prizes-bg {
+  background: url(../public/assets/pngs/premium-photo.png),
+    lightgray 0px -0.093px / 100% 109.967% no-repeat;
+  background-blend-mode: color-burn;
+}

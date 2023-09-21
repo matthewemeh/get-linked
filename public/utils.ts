@@ -21,3 +21,15 @@ export const breakdownTime = (timeMs: number) => {
 
   return { hours, minutes, seconds };
 };
+
+export const toggleClass = (el: Element | null, ...classes: string[]) => {
+  if (el) classes.forEach(className => el.classList.toggle(className));
+};
+
+export const addClass = (el: Element | null, ...classes: string[]) => {
+  if (el) classes.forEach(className => el.classList.add(className));
+};
+
+export const removeClass = (el: Element | null, ...classes: string[]) => {
+  if (el) classes.forEach(className => el.classList.remove(className));
+};

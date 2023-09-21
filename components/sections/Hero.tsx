@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { useEffect, useMemo, useState } from 'react';
 
-import Button from './Button';
+import Button from '../Button';
 
-import { breakdownTime } from '../public/utils';
+import { breakdownTime } from '../../public/utils';
 
-const HeroSection = () => {
+const Hero = () => {
   const [now, setNow] = useState<number>(Date.now());
   const endDate: Date = new Date('2023-09-23T11:59:00');
   const timeLeft: number = useMemo(() => endDate.getTime() - now, [now]);
@@ -22,7 +22,7 @@ const HeroSection = () => {
   }, [timeLeft]);
 
   return (
-    <section className='relative h-[813px] border-b border-[rgba(255,255,255,0.18)] grid grid-cols-2 overflow-hidden'>
+    <section className='relative h-[813px] border-y border-[rgba(255,255,255,0.18)] grid grid-cols-2 overflow-hidden'>
       <Image
         alt=''
         priority
@@ -71,9 +71,9 @@ const HeroSection = () => {
           <span className='inline-block relative after:absolute after:right-6 after:-top-12 after:bg-[url(/assets/pngs/bulb.png)] after:w-[53px] after:h-[73px]'>
             getlinked Tech
           </span>
-          <span className='inline-block relative after:absolute after:-right-22 after:bg-[url(/assets/pngs/chain.png)] after:w-[86px] after:h-[86px]'>
+          <span className='inline-block relative after:absolute after:top-2 after:-right-22 after:bg-[url(/assets/pngs/chain.png)] after:w-[86px] after:h-[86px]'>
             Hackathon&nbsp;
-            <span className='text-heliotrope relative after:absolute after:-right-36 after:top-3 after:bg-[url(/assets/pngs/fire.png)] after:w-[58px] after:h-[58px]'>
+            <span className='text-heliotrope relative after:absolute after:-right-36 after:top-5 after:bg-[url(/assets/pngs/fire.png)] after:w-[58px] after:h-[58px]'>
               1.0
             </span>
           </span>
@@ -86,13 +86,13 @@ const HeroSection = () => {
         <Button title='Register' href='/register' extraClasses='mt-10' />
 
         <p className={`text-[64px] font-normal leading-[85px] font-unica-one mt-[70px]`}>
-          <span className="relative after:absolute after:content-['H'] after:font-montserrat after:text-[14px] leading-[19px] after:bottom-3">
+          <span className="relative after:absolute after:content-['H'] after:font-montserrat after:text-[14px] leading-[19px] after:bottom-4">
             {`${hours}`.padStart(2, '0')}
           </span>
-          <span className="relative after:absolute after:content-['M'] after:font-montserrat after:text-[14px] leading-[19px] after:bottom-3 mx-10">
+          <span className="relative after:absolute after:content-['M'] after:font-montserrat after:text-[14px] leading-[19px] after:bottom-4 mx-10">
             {`${minutes}`.padStart(2, '0')}
           </span>
-          <span className="relative after:absolute after:content-['S'] after:font-montserrat after:text-[14px] leading-[19px] after:bottom-3">
+          <span className="relative after:absolute after:content-['S'] after:font-montserrat after:text-[14px] leading-[19px] after:bottom-4">
             {`${seconds}`.padStart(2, '0')}
           </span>
         </p>
@@ -122,4 +122,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;

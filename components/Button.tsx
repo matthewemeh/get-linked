@@ -1,11 +1,10 @@
 import Link from 'next/link';
-import { HTMLAttributeAnchorTarget } from 'react';
 
 interface Props {
   href: string;
   title: string;
   extraClasses?: string;
-  target?: HTMLAttributeAnchorTarget;
+  target?: React.HTMLAttributeAnchorTarget;
 }
 
 const Button: React.FC<Props> = ({ href, target, title, extraClasses }) => {

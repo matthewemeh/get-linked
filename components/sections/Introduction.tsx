@@ -1,15 +1,15 @@
 import Image from 'next/image';
 
-const IntroductionSection = () => {
+const Introduction = () => {
   return (
-    <section className='relative pt-[62px] pb-[78px] pl-[16vw] pr-[10vw] flex items-center justify-between border-b border-[rgba(255,255,255,0.18)]'>
+    <section className='relative pt-[62px] pb-[78px] pl-[16vw] pr-[9vw] flex items-center justify-between border-b border-[rgba(255,255,255,0.18)]'>
       <Image
         alt=''
         priority
         width={21}
         height={25}
         src='/assets/svgs/star-purple-gradient.svg'
-        className='absolute top-[223px] left-[12.6vw] -z-[1]'
+        className='absolute top-[223px] left-[12.6vw] -z-1'
       />
 
       <Image
@@ -18,10 +18,10 @@ const IntroductionSection = () => {
         width={21}
         height={25}
         src='/assets/svgs/star-purple.svg'
-        className='absolute top-[223px] right-[11.2vw] -z-[1]'
+        className='absolute top-[223px] right-[11.2vw] -z-1'
       />
 
-      <div className='relative w-[490px] h-[477px] after:absolute after:bg-[url(/assets/pngs/curly-arrow.svg)] after:-bottom-4 after:-right-10 after:w-[71px] after:h-[67px]'>
+      <div className='relative w-[490px] h-[477px] after:absolute after:bg-[url(/assets/pngs/curly-arrow.png)] after:-bottom-4 after:-right-10 after:w-[71px] after:h-[67px]'>
         <Image
           priority
           width={490}
@@ -30,12 +30,12 @@ const IntroductionSection = () => {
           className='absolute w-full h-full'
           src='/assets/pngs/the-big-idea.png'
         />
-        <p className='absolute top-[227.68px] left-[170px] text-center text-[24px] font-bold leading-[29.5px] w-[145px]'>
+        <p className='absolute top-[227.68px] left-[35%] text-center text-[24px] font-bold leading-[29.5px] w-[145px]'>
           The Big Idea!
         </p>
       </div>
 
-      <div className='max-w-[460px] pt-14'>
+      <div className='max-w-[519.5px] pt-14'>
         <h2 className='font-clash-display text-[32px] font-bold'>
           Introduction to getlinked
           <span className='block text-heliotrope'>tech Hackathon 1.0</span>
@@ -53,4 +53,4 @@ const IntroductionSection = () => {
   );
 };
 
-export default IntroductionSection;
+export default Introduction;

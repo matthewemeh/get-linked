@@ -9,12 +9,23 @@ export default function Document() {
       <Head>
         <meta charSet='UTF-8' />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
+        <link
+          rel='stylesheet'
+          href='https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap'
+        />
+
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='anonymous' />
+        <link
+          rel='stylesheet'
+          href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Unica+One&display=swap'
+        />
 
         <link rel='icon' href='/favicon.ico' />
         <meta name='description' content='Igniting a Revolution in HR Innovation' />
       </Head>
 
-      <body className='text-white bg-haiti leading-[normal]'>
+      <body className='text-white bg-haiti leading-[normal] overflow-x-hidden overflow-y-auto'>
         <Image
           alt=''
           priority
