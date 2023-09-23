@@ -121,7 +121,7 @@ const Hero = () => {
           />
           <div
             className={`absolute right-0 -bottom-4 bg-contain bg-no-repeat w-[255px] h-[17px] bg-[url(/assets/svgs/curved-line.svg)] phones:w-[115px] phones:h-[7px] phones:-right-1 phones:-bottom-3 duration-500 ${
-              finishedTyping ? 'after:opacity-100' : 'after:opacity-0'
+              finishedTyping ? 'opacity-100' : 'opacity-0'
             }`}
           />
         </div>
