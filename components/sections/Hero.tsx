@@ -114,13 +114,13 @@ const Hero = () => {
               'Igniting a Revolution in HR Innovation',
             ]}
             wrapper='p'
-            className={`text-[36px] italic font-bold relative  ${
+            className={`text-[36px] italic font-bold relative phones:text-[16px]  ${
               finishedTyping ? 'after:opacity-100' : 'after:opacity-0'
             }`}
             speed={50}
           />
           <div
-            className={`absolute right-0 -bottom-4 bg-contain bg-no-repeat w-[255px] h-[17px] bg-[url(/assets/svgs/curved-line.svg)] phones:w-[115px] phones:h-[7px] phones:-right-1 phones:-bottom-3 phones:text-[16px] duration-500 ${
+            className={`absolute right-0 -bottom-4 bg-contain bg-no-repeat w-[255px] h-[17px] bg-[url(/assets/svgs/curved-line.svg)] phones:w-[115px] phones:h-[7px] phones:-right-1 phones:-bottom-3 duration-500 ${
               finishedTyping ? 'after:opacity-100' : 'after:opacity-0'
             }`}
           />
