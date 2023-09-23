@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Typed from 'react-typed';
+import { TypeAnimation } from 'react-type-animation';
 import { useEffect, useMemo, useState } from 'react';
 
 import ButtonLink from '../ButtonLink';
@@ -88,7 +88,7 @@ const Hero = () => {
       />
 
       <div className='absolute h-fit top-8 right-[4vw] phones:top-[31px] phones:inset-0 phones:whitespace-nowrap phones:w-fit phones:left-1/2 phones:-translate-x-1/2'>
-        <Typed
+        {/* <Typed
           typeSpeed={70}
           showCursor={false}
           onComplete={() => setFinishedTyping(true)}
@@ -96,6 +96,47 @@ const Hero = () => {
           className={`text-[36px] italic font-bold relative after:absolute after:right-0 after:-bottom-4 after:bg-contain after:bg-no-repeat after:w-[255px] after:h-[17px] after:bg-[url(/assets/svgs/curved-line.svg)] phones:after:w-[115px] phones:after:h-[7px] phones:after:-right-1 phones:after:-bottom-3 phones:text-[16px] after:duration-500 ${
             finishedTyping ? 'after:opacity-100' : 'after:opacity-0'
           }`}
+        /> */}
+        {/* <p
+          className={`text-[36px] italic font-bold relative after:absolute after:right-0 after:-bottom-4 after:bg-contain after:bg-no-repeat after:w-[255px] after:h-[17px] after:bg-[url(/assets/svgs/curved-line.svg)] phones:after:w-[115px] phones:after:h-[7px] phones:after:-right-1 phones:after:-bottom-3 phones:text-[16px] after:duration-500 ${
+            finishedTyping ? 'after:opacity-100' : 'after:opacity-0'
+          }`}>
+          <Typical
+            wrapper='span'
+            steps={[
+              'Igniting',
+              1000,
+              'Igniting a',
+              1500,
+              'Igniting a Revolution',
+              2000,
+              'Igniting a Revolution in',
+              2500,
+              'Igniting a Revolution in HR',
+              3000,
+              'Igniting a Revolution in HR Innovation',
+            ]}
+          />
+        </p> */}
+        <TypeAnimation
+          sequence={[
+            'Igniting',
+            10,
+            'Igniting a',
+            10,
+            'Igniting a Revolution',
+            10,
+            'Igniting a Revolution in',
+            10,
+            'Igniting a Revolution in HR',
+            10,
+            'Igniting a Revolution in HR Innovation',
+          ]}
+          wrapper='span'
+          className={`text-[36px] italic font-bold relative after:absolute after:right-0 after:-bottom-4 after:bg-contain after:bg-no-repeat after:w-[255px] after:h-[17px] after:bg-[url(/assets/svgs/curved-line.svg)] phones:after:w-[115px] phones:after:h-[7px] phones:after:-right-1 phones:after:-bottom-3 phones:text-[16px] after:duration-500 ${
+            finishedTyping ? 'after:opacity-100' : 'after:opacity-0'
+          }`}
+          speed={50}
         />
       </div>
 
@@ -155,7 +196,7 @@ const Hero = () => {
           width={667}
           height={641}
           src='/assets/pngs/interconnected-lights.png'
-          className='absolute z-[1] -top-2.5 right-16 drop-shadow-2xl phones:w-[86.7vw] phones:h-[324.89px] phones:right-[5.5vw] phones:-top-[5px]'
+          className='absolute z-[1] -top-2.5 right-16 phones:w-[86.7vw] phones:h-[324.89px] phones:right-[5.5vw] phones:-top-[5px]'
         />
       </div>
     </section>
