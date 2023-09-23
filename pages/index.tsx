@@ -11,14 +11,14 @@ import Partners from '../components/sections/Partners';
 import RulesSection from '../components/sections/Rules';
 import IntroductionSection from '../components/sections/Introduction';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
         <title>Get Linked</title>
       </Head>
 
-      <main className=''>
+      <main>
         <HeroSection />
         <IntroductionSection />
         <RulesSection />
@@ -32,4 +32,6 @@ export default function Home() {
       </main>
     </>
   );
-}
+};
+
+export default Home;

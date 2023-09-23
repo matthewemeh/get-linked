@@ -1,20 +1,19 @@
-import Link from 'next/link';
+import ButtonLayout from './layout/ButtonLayout';
 
 interface Props {
-  href: string;
   title: string;
   extraClasses?: string;
-  target?: React.HTMLAttributeAnchorTarget;
+  type?: 'button' | 'reset' | 'submit';
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
-const Button: React.FC<Props> = ({ href, target, title, extraClasses }) => {
+const Button: React.FC<Props> = ({ extraClasses, onClick, title, type }) => {
   return (
-    <Link
-      href={href}
-      target={target}
-      className={`w-[172px] h-[53px] text-[16px] font-normal grid place-items-center rounded bg-[linear-gradient(270deg,#903aff_0%,#ff26b9_99.9%,#fe34b9_100%)] ${extraClasses}`}>
-      {title}
-    </Link>
+    <ButtonLayout extraClasses={extraClasses}>
+      <button onClick={onClick} type={type} className='w-full h-full'>
+        {title}
+      </button>
+    </ButtonLayout>
   );
 };
 

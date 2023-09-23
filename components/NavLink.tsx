@@ -27,7 +27,7 @@ const NavLink: React.FC<Props> = ({
       onClick={onClick}
       className={`${
         isActive &&
-        'bg-clip-text text-transparent bg-[linear-gradient(90deg,#903AFF_3.08%,#FF26B9_93.85%)]'
+        'bg-clip-text text-transparent bg-[linear-gradient(90deg,#903AFF_3.08%,#FF26B9_93.85%)] phones:font-inter'
       } ${extraClasses}`}>
       {children}
     </Link>

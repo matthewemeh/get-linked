@@ -7,3 +7,12 @@
     lightgray 0px -0.093px / 100% 109.967% no-repeat;
   background-blend-mode: color-burn;
 }
+
+.scroll-hidden {
+  scrollbar-width: none; /* firefox scroll styling */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
