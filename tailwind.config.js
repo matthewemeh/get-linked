@@ -32,6 +32,30 @@ module.exports = {
         '-2': '-2',
         '-3': '-3',
       },
+      keyframes: {
+        'fade-left': {
+          from: { marginLeft: '10%', opacity: '0' },
+          to: { marginLeft: '0%', opacity: '1' },
+        },
+        'fade-in': {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+        rotate: {
+          from: { transform: 'rotate(0)' },
+          to: { transform: 'rotate(360deg)' },
+        },
+        'reverse-rotate': {
+          from: { transform: 'rotate(360deg)' },
+          to: { transform: 'rotate(0)' },
+        },
+      },
+      animation: {
+        rotate: 'rotate 400ms ease-in-out',
+        'fade-left': 'fade-left 1s ease-in-out',
+        'fade-in': 'fade-in 1500ms ease-in-out',
+        'reverse-rotate': 'reverse-rotate 400ms ease-in-out',
+      },
       screens: {
         'x-large': { max: '1440px' },
         large: { max: '1200px' },
