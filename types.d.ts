@@ -1,3 +1,5 @@
-type NavigationRoute = '/' | '#timeline' | '#faqs' | '/overview' | '/contact' | '/register';
+type NavigationRoute = '/' | '/#timeline' | '/#faqs' | '/overview' | '/contact' | '/register';
 
-type ScrollStatus = 'scrolling up' | 'scrolling down' | 'not scrolling';
+type ScrollStatus = 'scrolling up' | 'scrolling down';
+
+type CategoriesResponse = Category[];
