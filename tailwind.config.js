@@ -49,12 +49,19 @@ module.exports = {
           from: { transform: 'rotate(360deg)' },
           to: { transform: 'rotate(0)' },
         },
+        'ping-lights': {
+          '75%, 100%': {
+            transform: 'scale(2)',
+            opacity: '0',
+          },
+        },
       },
       animation: {
         rotate: 'rotate 400ms ease-in-out',
         'fade-left': 'fade-left 1s ease-in-out',
         'fade-in': 'fade-in 1500ms ease-in-out',
         'reverse-rotate': 'reverse-rotate 400ms ease-in-out',
+        'ping-lights': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite alternate',
       },
       screens: {
         'x-large': { max: '1440px' },

@@ -30,6 +30,16 @@ const Hero = () => {
     };
   }, [timeLeft]);
 
+  useEffect(() => {
+    if (!finishedTyping) {
+      setTimeout(() => setFinishedTyping(true), 6000);
+    }
+
+    return () => {
+      setTimeout(() => setFinishedTyping(true), 6000);
+    };
+  }, []);
+
   return (
     <section className='relative h-[813px] border-y border-[rgba(255,255,255,0.18)] overflow-hidden phones:grid-cols-1 phones:border-b-0 phones:h-[780px]'>
       <Image
@@ -88,56 +98,33 @@ const Hero = () => {
       />
 
       <div className='absolute h-fit top-8 right-[4vw] phones:top-[31px] phones:inset-0 phones:whitespace-nowrap phones:w-fit phones:left-1/2 phones:-translate-x-1/2'>
-        {/* <Typed
-          typeSpeed={70}
-          showCursor={false}
-          onComplete={() => setFinishedTyping(true)}
-          strings={['Igniting a Revolution in HR Innovation']}
-          className={`text-[36px] italic font-bold relative after:absolute after:right-0 after:-bottom-4 after:bg-contain after:bg-no-repeat after:w-[255px] after:h-[17px] after:bg-[url(/assets/svgs/curved-line.svg)] phones:after:w-[115px] phones:after:h-[7px] phones:after:-right-1 phones:after:-bottom-3 phones:text-[16px] after:duration-500 ${
-            finishedTyping ? 'after:opacity-100' : 'after:opacity-0'
-          }`}
-        /> */}
-        {/* <p
-          className={`text-[36px] italic font-bold relative after:absolute after:right-0 after:-bottom-4 after:bg-contain after:bg-no-repeat after:w-[255px] after:h-[17px] after:bg-[url(/assets/svgs/curved-line.svg)] phones:after:w-[115px] phones:after:h-[7px] phones:after:-right-1 phones:after:-bottom-3 phones:text-[16px] after:duration-500 ${
-            finishedTyping ? 'after:opacity-100' : 'after:opacity-0'
-          }`}>
-          <Typical
-            wrapper='span'
-            steps={[
+        <div className='relative'>
+          <TypeAnimation
+            sequence={[
               'Igniting',
-              1000,
+              10,
               'Igniting a',
-              1500,
+              10,
               'Igniting a Revolution',
-              2000,
+              10,
               'Igniting a Revolution in',
-              2500,
+              10,
               'Igniting a Revolution in HR',
-              3000,
+              10,
               'Igniting a Revolution in HR Innovation',
             ]}
+            wrapper='p'
+            className={`text-[36px] italic font-bold relative  ${
+              finishedTyping ? 'after:opacity-100' : 'after:opacity-0'
+            }`}
+            speed={50}
           />
-        </p> */}
-        <TypeAnimation
-          sequence={[
-            'Igniting',
-            10,
-            'Igniting a',
-            10,
-            'Igniting a Revolution',
-            10,
-            'Igniting a Revolution in',
-            10,
-            'Igniting a Revolution in HR',
-            10,
-            'Igniting a Revolution in HR Innovation',
-          ]}
-          wrapper='span'
-          className={`text-[36px] italic font-bold relative after:absolute after:right-0 after:-bottom-4 after:bg-contain after:bg-no-repeat after:w-[255px] after:h-[17px] after:bg-[url(/assets/svgs/curved-line.svg)] phones:after:w-[115px] phones:after:h-[7px] phones:after:-right-1 phones:after:-bottom-3 phones:text-[16px] after:duration-500 ${
-            finishedTyping ? 'after:opacity-100' : 'after:opacity-0'
-          }`}
-          speed={50}
-        />
+          <div
+            className={`absolute right-0 -bottom-4 bg-contain bg-no-repeat w-[255px] h-[17px] bg-[url(/assets/svgs/curved-line.svg)] phones:w-[115px] phones:h-[7px] phones:-right-1 phones:-bottom-3 phones:text-[16px] duration-500 ${
+              finishedTyping ? 'after:opacity-100' : 'after:opacity-0'
+            }`}
+          />
+        </div>
       </div>
 
       {/* left sub-section */}
@@ -196,7 +183,7 @@ const Hero = () => {
           width={667}
           height={641}
           src='/assets/pngs/interconnected-lights.png'
-          className='absolute z-[1] -top-2.5 right-16 phones:w-[86.7vw] phones:h-[324.89px] phones:right-[5.5vw] phones:-top-[5px]'
+          className='absolute z-[1] animate-ping-lights -top-2.5 right-16 phones:w-[86.7vw] phones:h-[324.89px] phones:right-[5.5vw] phones:-top-[5px]'
         />
       </div>
     </section>
