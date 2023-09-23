@@ -35,8 +35,8 @@ const Hero = () => {
         unoptimized
         width={1086}
         height={836}
+        className='absolute -z-10 phones:hidden'
         src='/assets/pngs/purple-lens-flare-1.png'
-        className='absolute -z-10 border phones:hidden'
       />
 
       <Image
