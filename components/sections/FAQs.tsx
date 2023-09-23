@@ -54,24 +54,39 @@ const FAQs = () => {
       />
 
       <div className='w-[427px] mt-[164px] phones:text-center phones:mt-0 phones:w-[unset]'>
-        <h5 className='font-clash-display text-[32px] font-bold phones:text-[20px] phones:leading-[26.6px]'>
+        <h5 className='anime anime-left font-clash-display text-[32px] font-bold phones:text-[20px] phones:leading-[26.6px]'>
           Frequently Asked
           <span className='block text-heliotrope'>Questions</span>
         </h5>
 
-        <p className='max-w-[342px] mt-4 text-[14px] font-normal leading-[27.5px] phones:mt-1.5 phones:text-[12px] phones:w-full phones:max-w-[unset]'>
+        <p className='anime anime-left delay-700 max-w-[342px] mt-4 text-[14px] font-normal leading-[27.5px] phones:mt-1.5 phones:text-[12px] phones:w-full phones:max-w-[unset]'>
           We got answers to the questions that you might want to ask about&nbsp;
           <span className='font-bold'>getlinked Hackathon 1.0</span>
         </p>
 
-        <ul className='mt-[68px] flex flex-col gap-y-[25px] phones:mt-[45.69px] phones:gap-y-[17.6px]'>
-          <FAQListItem question='Can I work on a project I started before the hackathon?' />
-          <FAQListItem question='What happens if I need help during the hackathon?' />
-          <FAQListItem question="What happens if I don't have an idea for a project?" />
-          <FAQListItem question='Can I join a team or do I have to come with one?' />
-          <FAQListItem question='What happens after the hackathon ends' />
-          <FAQListItem question='Can I work on a project I started before the hackathon?' />
-        </ul>
+        <div className='mt-[68px] flex flex-col gap-y-[25px] phones:mt-[45.69px] phones:gap-y-[17.6px]'>
+          <FAQListItem
+            answer='Yes you can'
+            question='Can I work on a project I started before the hackathon?'
+          />
+          <FAQListItem
+            answer='Yes you can'
+            question='What happens if I need help during the hackathon?'
+          />
+          <FAQListItem
+            answer='Yes you can'
+            question="What happens if I don't have an idea for a project?"
+          />
+          <FAQListItem
+            answer='Yes you can'
+            question='Can I join a team or do I have to come with one?'
+          />
+          <FAQListItem answer='Yes you can' question='What happens after the hackathon ends' />
+          <FAQListItem
+            answer='Yes you can'
+            question='Can I work on a project I started before the hackathon?'
+          />
+        </div>
       </div>
 
       <div className='relative mt-[122px] w-[741px] h-[741px] phones:w-full phones:h-full phones:mt-[86px]'>

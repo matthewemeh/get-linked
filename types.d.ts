@@ -1,4 +1,4 @@
-type NavigationRoute = '/' | '/#timeline' | '/#faqs' | '/overview' | '/contact' | '/register';
+type NavigationRoute = '/' | '/#timeline' | '/#faqs' | '/#top' | '/contact' | '/register';
 
 type ScrollStatus = 'scrolling up' | 'scrolling down';
 

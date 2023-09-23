@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Typed from 'react-typed';
 import { useEffect, useMemo, useState } from 'react';
 
 import ButtonLink from '../ButtonLink';
@@ -8,8 +9,10 @@ import StarWhite from '../stars/StarWhite';
 import { breakdownTime } from '../../public/utils';
 
 const Hero = () => {
+  const [finishedTyping, setFinishedTyping] = useState<boolean>(false);
+
   const [now, setNow] = useState<number>(Date.now());
-  const endDate: Date = new Date('2023-09-23T23:59:59');
+  const endDate: Date = new Date('2023-09-27T23:59:59');
   const timeLeft: number = useMemo(() => {
     const newTimeLeft: number = endDate.getTime() - now;
 
@@ -85,9 +88,15 @@ const Hero = () => {
       />
 
       <div className='absolute h-fit top-8 right-[4vw] phones:top-[31px] phones:inset-0 phones:whitespace-nowrap phones:w-fit phones:left-1/2 phones:-translate-x-1/2'>
-        <p className='text-[36px] italic font-bold relative after:absolute after:right-0 after:-bottom-4 after:bg-contain after:bg-no-repeat after:w-[255px] after:h-[17px] after:bg-[url(/assets/svgs/curved-line.svg)] phones:after:w-[115px] phones:after:h-[7px] phones:after:-right-1 phones:after:-bottom-3 phones:text-[16px]'>
-          Igniting a Revolution in HR Innovation
-        </p>
+        <Typed
+          typeSpeed={70}
+          showCursor={false}
+          onComplete={() => setFinishedTyping(true)}
+          strings={['Igniting a Revolution in HR Innovation']}
+          className={`text-[36px] italic font-bold relative after:absolute after:right-0 after:-bottom-4 after:bg-contain after:bg-no-repeat after:w-[255px] after:h-[17px] after:bg-[url(/assets/svgs/curved-line.svg)] phones:after:w-[115px] phones:after:h-[7px] phones:after:-right-1 phones:after:-bottom-3 phones:text-[16px] after:duration-500 ${
+            finishedTyping ? 'after:opacity-100' : 'after:opacity-0'
+          }`}
+        />
       </div>
 
       {/* left sub-section */}
@@ -146,7 +155,7 @@ const Hero = () => {
           width={667}
           height={641}
           src='/assets/pngs/interconnected-lights.png'
-          className='absolute z-[1] -top-2.5 right-16 phones:w-[86.7vw] phones:h-[324.89px] phones:right-[5.5vw] phones:-top-[5px]'
+          className='absolute z-[1] -top-2.5 right-16 drop-shadow-2xl phones:w-[86.7vw] phones:h-[324.89px] phones:right-[5.5vw] phones:-top-[5px]'
         />
       </div>
     </section>

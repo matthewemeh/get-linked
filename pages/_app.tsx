@@ -3,7 +3,10 @@ import type { AppProps } from 'next/app';
 import { createContext, useEffect, useState } from 'react';
 
 import '../styles/globals.css';
+
 import Navigation from '../components/Navigation';
+
+import { addClass } from '../public/utils';
 
 const MOBILE_BREAKPOINT = 600;
 const LAPTOP_BREAKPOINT = 1024;
@@ -30,6 +33,29 @@ export default function App({ Component, pageProps }: AppProps) {
     setCurrentRoute(newRoute);
   };
 
+  const watchHeadingScroll = () => {
+    const observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry: IntersectionObserverEntry) => {
+        const currentElement: Element = entry.target;
+
+        if (entry.isIntersecting) {
+          if (currentElement.classList.contains('anime-left')) {
+            addClass(currentElement, 'animate-fade-left');
+          }
+          if (currentElement.classList.contains('anime-fade')) {
+            addClass(currentElement, 'animate-fade-in');
+          }
+        }
+      });
+    });
+
+    const headings: NodeListOf<HTMLElement> = document.querySelectorAll('.anime');
+
+    headings.forEach((heading: HTMLElement) => {
+      observer.observe(heading);
+    });
+  };
+
   useEffect(updateNavOnReload);
 
   useEffect(() => {
@@ -50,6 +76,12 @@ export default function App({ Component, pageProps }: AppProps) {
       });
     };
   }, []);
+
+  useEffect(() => {
+    if (screenWidth > MOBILE_BREAKPOINT) {
+      watchHeadingScroll();
+    }
+  }, [screenWidth]);
 
   return (
     <AppContext.Provider

@@ -44,7 +44,7 @@ const TimelineItem: React.FC<Props> = ({
     </div>
   ) : (
     <div
-      className={`pl-5 pb-2 text-heliotrope font-bold text-[12px] relative border-l-2 border-heliotrope ${extraClasses}`}>
+      className={`pl-5 pb-2 text-heliotrope font-bold text-[12px] relative border-l-2 mr-auto border-heliotrope ${extraClasses}`}>
       <p className=''>{title}</p>
       <p className='mt-0.5 font-normal leading-[20.51px] text-white'>{subtitle}</p>
       <p className='mt-[3px]'>{date}</p>

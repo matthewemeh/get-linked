@@ -4,6 +4,7 @@ import ButtonLink from '../ButtonLink';
 import StarGrey from '../stars/StarGrey';
 import StarWhite from '../stars/StarWhite';
 import StarPurple from '../stars/StarPurple';
+import PolicyListItem from '../PolicyListItem';
 import StarPurpleGradient from '../stars/StarPurpleGradient';
 
 const Terms = () => {
@@ -68,16 +69,16 @@ const Terms = () => {
 
       <div className='max-w-[569px]'>
         <header className='phones:text-center'>
-          <p className='mt-[169px] text-[32px] font-clash-display font-bold phones:mt-0 phones:text-[20px]'>
+          <p className='anime anime-left mt-[169px] text-[32px] font-clash-display font-bold phones:mt-0 phones:text-[20px]'>
             Privacy Policy and
             <span className='text-heliotrope block'>Terms</span>
           </p>
 
-          <p className='mt-[17px] text-[rgba(255,255,255,0.75)] text-[14px] font-normal leading-[27.5px] phones:mt-0 phones:text-[12px]'>
+          <p className='anime anime-left delay-[1s] mt-[17px] text-[rgba(255,255,255,0.75)] text-[14px] font-normal leading-[27.5px] phones:mt-0 phones:text-[12px]'>
             Last updated on September 12, 2023
           </p>
 
-          <p className='mt-[30px] max-w-[420px] text-[14px] leading-[26.4px] phones:mt-7 phones:text-[12px] phones:leading-[22.61px]'>
+          <p className='anime anime-left delay-[2s] mt-[30px] max-w-[420px] text-[14px] leading-[26.4px] phones:mt-7 phones:text-[12px] phones:leading-[22.61px]'>
             Below are our privacy &amp; policy, which outline a lot of goodies. It&apos;s our aim to
             always take of our participant
           </p>
@@ -98,15 +99,15 @@ const Terms = () => {
             Here are terms of our Standard License:
           </p>
 
-          <ul className='mt-[18px] flex flex-col gap-y-[18px] list-image-[url(/assets/svgs/check.svg)] list-inside phones:text-[12px] phones:leading-[21.11px] phones:mt-[21px] phones:gap-y-6'>
-            <li className='first-letter:pl-3.5'>
-              The Standard License grants you a non-exclusive right to navigate and register for our
-              event
-            </li>
-            <li className='first-letter:pl-3.5 phones:leading-[21.95px]'>
-              You are licensed to use the item available at any free source sites, for your project
-              developement
-            </li>
+          <ul className='mt-[18px] flex flex-col gap-y-[18px] list-image-[url(/assets/svgs/check.svg)] list-inside phones:text-[12px] phones:leading-[21.11px] phones:mt-[21px] phones:gap-y-6 phones:list-image-none'>
+            <PolicyListItem
+              text='The Standard License grants you a non-exclusive right to navigate and register for our
+              event'
+            />
+            <PolicyListItem
+              text='You are licensed to use the item available at any free source sites, for your project
+              developement'
+            />
           </ul>
 
           <ButtonLink

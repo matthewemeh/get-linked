@@ -1,8 +1,5 @@
+/**  timeMs in milliseconds */
 export const breakdownTime = (timeMs: number) => {
-  /**
-   * @param {number} time is in milliseconds
-   */
-
   let time = timeMs;
 
   const hoursToMilliseconds = 3_600_000;

@@ -8,8 +8,8 @@ const Prizes = () => {
   return (
     <section
       id='prizes'
-      className='relative pl-[7.2vw] pr-[9vw] flex items-center justify-between gap-x-[37px] phones:flex-col phones:px-[12.31vw] phones:pb-[89.27px]'>
-      <Image
+      className='relative pl-[7.2vw] pr-[9vw] flex items-center justify-between bg-ebony -z-3 gap-x-[37px] phones:flex-col phones:px-[12.31vw] phones:pb-[89.27px]'>
+      {/* <Image
         alt=''
         priority
         unoptimized
@@ -17,9 +17,9 @@ const Prizes = () => {
         height={945}
         src='/assets/pngs/premium-photo.png'
         className='absolute left-0 w-full h-full -z-3 phones:hidden'
-      />
+      /> */}
 
-      <Image
+      {/* <Image
         alt=''
         priority
         unoptimized
@@ -27,7 +27,7 @@ const Prizes = () => {
         height={848}
         src='/assets/pngs/mobile-premium-photo.png'
         className='absolute left-0 w-screen h-full -z-3 hidden phones:block'
-      />
+      /> */}
 
       <Image
         alt=''
@@ -106,10 +106,10 @@ const Prizes = () => {
       />
 
       <header className='absolute top-[74px] left-[58.3vw] phones:static phones:text-center phones:mt-[72px]'>
-        <h6 className='font-clash-display text-[32px] font-bold phones:text-[20px] phones:max-w-[109px] phones:text-center phones:mx-auto'>
+        <h6 className='anime anime-left font-clash-display text-[32px] font-bold phones:text-[20px] phones:max-w-[109px] phones:text-center phones:mx-auto'>
           Prizes and <span className='block text-heliotrope'>Rewards</span>
         </h6>
-        <p className='text-[16px] font-normal leading-[27.3px] max-w-[401px] mt-4 phones:mt-[3px] phones:text-[12px] phones:leading-[20.51px]'>
+        <p className='anime anime-left delay-700 text-[16px] font-normal leading-[27.3px] max-w-[401px] mt-4 phones:mt-[3px] phones:text-[12px] phones:leading-[20.51px]'>
           Highlight of the prizes or rewards for winners and for participants.
         </p>
       </header>
@@ -118,8 +118,8 @@ const Prizes = () => {
         <Image src='/assets/pngs/trophy.png' alt='' priority unoptimized width={548} height={482} />
       </div>
 
-      <div className='flex mt-[483px] mb-[149px] phones:mt-32 phones:mb-0'>
-        <div className='relative z-[3] pt-[111px] w-[212px] h-[296px] text-center rounded-lg border border-heliotrope bg-[rgba(212,52,254,0.12)] phones:w-[90px] phones:h-[125.7px] phones:pt-[55px]'>
+      <div className='flex mt-[483px] mb-[149px] phones:mt-32 phones:mb-0 phones:mx-auto'>
+        <div className='anime anime-fade delay-1000 relative z-[3] pt-[111px] w-[212px] h-[296px] text-center rounded-lg border border-heliotrope bg-[rgba(212,52,254,0.12)] phones:w-[90px] phones:h-[125.7px] phones:pt-[55px]'>
           <Image
             alt=''
             priority
@@ -134,8 +134,8 @@ const Prizes = () => {
           <p className='text-heliotrope text-[32px] font-bold phones:text-[14px]'>N300,000</p>
         </div>
 
-        <div className='relative z-[3] bottom-[34px] pt-[149px] pb-[21px] w-[212px] h-[347px] text-center rounded-lg border border-electric-violet-1 bg-[rgba(144,58,255,0.12)] ml-[30px] mr-[26px] phones:w-[90px] phones:h-[170.3px] phones:ml-[13px] phones:mr-[11px] phones:pt-[90px]'>
-          <div className='w-[296px] h-[296px] absolute left-1/2 -translate-x-1/2 -top-[149px] phones:w-[125.7px] phones:h-[125.7px] phones:-top-[62.41px]'>
+        <div className='anime anime-fade delay-[2000ms] relative z-[3] bottom-[34px] pt-[149px] pb-[21px] w-[212px] h-[347px] text-center rounded-lg border border-electric-violet-1 bg-[rgba(144,58,255,0.12)] ml-[30px] mr-[26px] phones:w-[90px] phones:h-[170.3px] phones:ml-[13px] phones:mr-[11px] phones:pt-[90px]'>
+          <div className='w-[296px] h-[296px] absolute left-1/2 -translate-x-1/2 -top-[149px] phones:w-[125.7px] phones:h-[125.7px] phones:-top-[42.41px]'>
             <Image alt='' unoptimized priority fill src='/assets/pngs/gold_medal.png' />
           </div>
           <p className='text-[36px] font-bold phones:text-[12px]'>1st</p>
@@ -145,7 +145,7 @@ const Prizes = () => {
           </p>
         </div>
 
-        <div className='relative z-[3] pt-[111px] pb-[33px] w-[212px] h-[296px] text-center rounded-lg border border-heliotrope bg-[rgba(212,52,254,0.12)] phones:w-[90px] phones:h-[125.7px] phones:pt-[55px]'>
+        <div className='anime anime-fade relative z-[3] pt-[111px] pb-[33px] w-[212px] h-[296px] text-center rounded-lg border border-heliotrope bg-[rgba(212,52,254,0.12)] phones:w-[90px] phones:h-[125.7px] phones:pt-[55px]'>
           <Image
             alt=''
             priority

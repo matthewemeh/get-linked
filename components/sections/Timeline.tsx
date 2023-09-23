@@ -15,10 +15,10 @@ const Timeline = () => {
       id='timeline'
       className='relative pt-[72px] min-h-[1700px] phones:pt-20 phones:px-[12vw] phones:pb-[73.68px] phones:min-h-[unset]'>
       <header className='text-center'>
-        <p className='font-clash-display text-[32px] font-bold phones:text-[20px] phones:leading-[26.6px]'>
+        <p className='anime anime-fade font-clash-display text-[32px] font-bold phones:text-[20px] phones:leading-[26.6px]'>
           Timeline
         </p>
-        <p className='mt-3 max-w-[346px] mx-auto text-[14px] font-normal leading-6 phones:mt-[18px]'>
+        <p className='anime anime-fade delay-700  mt-3 max-w-[346px] mx-auto text-[14px] font-normal leading-6 phones:mt-[18px]'>
           Here is the breakdown of the time we anticipate using for the upcoming event.
         </p>
       </header>

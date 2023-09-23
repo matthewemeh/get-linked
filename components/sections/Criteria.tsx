@@ -89,7 +89,7 @@ const Criteria = () => {
       </div>
 
       <div className='max-w-[564px] mt-[70px] phones:text-center'>
-        <h4 className='font-clash-display text-[32px] font-bold phones:text-[20px] phones:leading-[26.6px]'>
+        <h4 className='anime anime-left font-clash-display text-[32px] font-bold phones:text-[20px] phones:leading-[26.6px]'>
           Judging Criteria
           <span className='block text-heliotrope'>Key attributes</span>
         </h4>
@@ -97,30 +97,31 @@ const Criteria = () => {
         <ul className='mt-[21px] phones:mt-4'>
           <CriteriaListItem
             title='Innovation and Creativity'
+            extraClasses='anime anime-left delay-100'
             description='Evaluate the uniqueness and creativity of the solution. Consider whether it addresses a real-world problem in a novel way or introduces innovative features.'
           />
 
           <CriteriaListItem
             title='Functionality'
-            extraClasses='mt-[22px]'
+            extraClasses='mt-[22px] anime anime-left delay-200'
             description='Assess how well the solution works. Does it perform its intended functions effectively and without major issues? Judges would consider the completeness and robustness of the solution.'
           />
 
           <CriteriaListItem
-            extraClasses='mt-[27px]'
             title='Impact and Relevance'
+            extraClasses='mt-[27px] anime anime-left delay-300'
             description='Determine the potential impact of the solution in the real world. Does it address a significant problem, and is it relevant to the target audience? Judges would assess the potential social, economic, or environmental benefits.'
           />
 
           <CriteriaListItem
-            extraClasses='mt-[23px]'
             title='Technical Complexity'
+            extraClasses='mt-[23px] anime anime-left delay-400'
             description='Evaluate the technical sophistication of the solution. Judges would consider the complexity of the code, the use of advanced technologies or algorithms, and the scalability of the solution.'
           />
 
           <CriteriaListItem
-            extraClasses='mt-7'
             title='Adherence to Hackathon Rules'
+            extraClasses='mt-7 anime anime-left delay-500'
             description='Judges will Ensure that the team adhered to the rules and guidelines of the hackathon, including deadlines, use of specific technologies or APIs, and any other competition-specific requirements.'
           />
         </ul>

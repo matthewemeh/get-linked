@@ -41,12 +41,12 @@ const Introduction = () => {
       </div>
 
       <div className='max-w-[519.5px] pt-14 phones:text-center phones:pt-[58px]'>
-        <h2 className='font-clash-display text-[32px] font-bold phones:text-[20px] phones:leading-[26.6px]'>
+        <h2 className='anime anime-left font-clash-display relative text-[32px] font-bold phones:text-[20px] phones:leading-[26.6px]'>
           Introduction to getlinked
           <span className='block text-heliotrope'>tech Hackathon 1.0</span>
         </h2>
 
-        <p className='text-[14px] font-normal leading-[27.5px] mt-4 phones:mt-[9px] phones:text-[13px] phones:px-3'>
+        <p className='anime anime-left delay-700 text-[14px] font-normal leading-[27.5px] mt-4 phones:mt-[9px] phones:text-[13px] phones:px-3'>
           Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as day: to
           shape the future. Whether you&apos;re a coding genius, a design maverick, or a concept
           wizard, you&apos;ll have the chance to transform your ideas into reality. Solving

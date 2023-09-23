@@ -150,8 +150,8 @@ const Register = () => {
           priority
           width={1037}
           height={948}
-          src='/assets/svgs/purple-lens-flare-1.svg'
-          className='absolute -z-2 -top-[52px] -left-[258px] phones:hidden'
+          src='/assets/pngs/purple-lens-flare-1.png'
+          className='absolute -z-3 -top-[52px] -left-[258px] phones:hidden'
         />
 
         <Image
@@ -160,7 +160,7 @@ const Register = () => {
           width={1037}
           height={948}
           src='/assets/svgs/purple-lens-flare-2.svg'
-          className='absolute -z-2 top-[288px] -right-[432px] phones:hidden'
+          className='absolute -z-3 top-[288px] -right-[432px] phones:hidden'
         />
 
         <Image
@@ -169,7 +169,7 @@ const Register = () => {
           width={396}
           height={442}
           src='/assets/svgs/mobile-purple-lens-flare-11.svg'
-          className='absolute -z-1 top-0 -left-[3px] w-screen hidden phones:block'
+          className='absolute -z-3 top-0 -left-[3px] w-screen hidden phones:block'
         />
 
         <h1 className='hidden font-clash-display text-[15px] font-bold text-heliotrope phones:block'>

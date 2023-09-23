@@ -68,11 +68,10 @@ const Contact = () => {
       </Head>
 
       <main className='flex justify-between pl-[13.194vw] pr-[14.44vw] relative phones:px-[12.56vw] phones:pt-[111px] phones:pb-[36.44px]'>
-        <StarPurpleGradient left='14.24vw' top={199} extraClasses='phones:hidden' />
-        <StarPurple top={698} left='46.74vw' extraClasses='phones:hidden' />
-        <StarPurple width={26} height={32} top={167} left='16.32vw' extraClasses='phones:hidden' />
+        <StarPurpleGradient left='14.24vw' top={81} extraClasses='phones:hidden' />
         <StarOutline left='8.4vw' top={376} extraClasses='phones:hidden' />
         <StarOutline left='40.42vw' top={410} extraClasses='phones:hidden' />
+        <StarGrey right='15.63vw' top={51} extraClasses='phones:hidden' />
         <StarPurple top={698} left='46.74vw' extraClasses='phones:hidden' />
         <StarWhite top={835} right='8.9vw' extraClasses='phones:hidden' />
 
@@ -116,8 +115,8 @@ const Contact = () => {
           priority
           width={1086}
           height={836}
-          src='/assets/svgs/purple-lens-flare-1.svg'
-          className='absolute -z-1 -top-[52px] -left-[258px] phones:hidden'
+          src='/assets/pngs/purple-lens-flare-1.png'
+          className='absolute -z-3 -top-[52px] -left-[258px] phones:hidden'
         />
 
         <Image
@@ -126,7 +125,7 @@ const Contact = () => {
           width={1086}
           height={836}
           src='/assets/svgs/purple-lens-flare-2.svg'
-          className='absolute -z-1 top-[288px] -right-[432px] phones:hidden'
+          className='absolute -z-3 top-[288px] -right-[432px] phones:hidden'
         />
 
         <Image
@@ -135,7 +134,7 @@ const Contact = () => {
           width={396}
           height={442}
           src='/assets/svgs/mobile-purple-lens-flare-11.svg'
-          className='absolute -z-1 top-0 -left-[3px] w-screen hidden phones:block'
+          className='absolute -z-3 top-0 -left-[3px] w-screen hidden phones:block'
         />
 
         <div className='mt-[163px] text-[16px] font-normal w-[272px] phones:hidden'>

@@ -78,12 +78,12 @@ const Rules = () => {
       />
 
       <div className='max-w-[519.5px] phones:text-center phones:mt-2.5'>
-        <h3 className='font-clash-display text-[32px] font-bold phones:text-[20px] phones:leading-[26.6px]'>
+        <h3 className='anime anime-left font-clash-display text-[32px] font-bold phones:text-[20px] phones:leading-[26.6px]'>
           Rules and
           <span className='block text-heliotrope'>Guidelines</span>
         </h3>
 
-        <p className='text-[14px] font-normal leading-[27.5px] mt-4 phones:mt-[9px]'>
+        <p className='anime anime-left delay-700 text-[14px] font-normal leading-[27.5px] mt-4 phones:mt-[9px]'>
           Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as day: to
           shape the future. Whether you&apos;re a coding genius, a design maverick, or a concept
           wizard, you&apos;ll have the chance to transform your ideas into reality. Solving
