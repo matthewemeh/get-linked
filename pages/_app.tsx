@@ -11,8 +11,8 @@ const SMALL_MOBILE_BREAKPOINT = 400;
 
 export const AppContext = createContext<AppContextData>({
   screenWidth: 0,
-  currentRoute: '/',
   screenHeight: 0,
+  currentRoute: '/',
   LAPTOP_BREAKPOINT,
   MOBILE_BREAKPOINT,
   SMALL_MOBILE_BREAKPOINT,
