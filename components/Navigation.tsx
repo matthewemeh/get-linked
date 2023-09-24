@@ -112,7 +112,7 @@ const Navigation = () => {
 
       <div
         className={`text-[16px] font-normal flex items-center justify-center gap-y-5 gap-x-[4vw] duration-400 phones:fixed phones:top-0 phones:flex-col phones:pt-10 phones:text-[18px] phones:font-medium phones:-tracking-[1px] phones:bg-haiti phones:rounded-lg phones:border-[0.5px] phones:border-[rgba(255,255,255,0.04)] phones:backdrop-blur-[30px] phones:w-[348px] phones:h-[492px] phones:pl-[40px] phones:items-start phones:justify-start phones:z-20 ${
-          mobileNavOpened ? 'right-0' : '-right-[400px]'
+          mobileNavOpened ? 'right-0' : '-right-[100vw]'
         }`}>
         <CloseButton extraClasses='ml-auto mr-[45px]' onClick={() => setMobileNavOpened(false)} />
 
