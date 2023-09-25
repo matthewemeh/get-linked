@@ -32,11 +32,11 @@ const Hero = () => {
 
   useEffect(() => {
     if (!finishedTyping) {
-      setTimeout(() => setFinishedTyping(true), 6000);
+      setTimeout(() => setFinishedTyping(true), 4000);
     }
 
     return () => {
-      setTimeout(() => setFinishedTyping(true), 6000);
+      setTimeout(() => setFinishedTyping(true), 4000);
     };
   }, []);
 

@@ -8,7 +8,7 @@ import StarPurpleGradient from '../stars/StarPurpleGradient';
 
 const Footer = () => {
   return (
-    <footer className='relative bg-ebony px-[12vw] pt-[70px] pb-[50px] grid grid-cols-[54%_30%_16%] -z-3 phones:pl-[17.44vw] phones:pr-[13.08vw] phones:pt-[51px] phones:block phones:pb-[53px]'>
+    <footer className='relative bg-ebony bg-opacity-30 px-[12vw] pt-[70px] pb-[50px] grid grid-cols-[54%_30%_16%] phones:pl-[17.44vw] phones:pr-[13.08vw] phones:pt-[51px] phones:block phones:pb-[53px]'>
       <StarWhite width={15} height={18} top={107} left='5vw' extraClasses='phones:hidden' />
       <StarPurpleGradient left='49vw' top={282} extraClasses='phones:hidden' />
       <StarGrey top={99} right='30vw' width={15} height={18} extraClasses='phones:hidden' />
