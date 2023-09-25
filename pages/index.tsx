@@ -18,7 +18,7 @@ const Home = () => {
         <title>Get Linked</title>
       </Head>
 
-      <main>
+      <main className='overflow-hidden'>
         <HeroSection />
         <IntroductionSection />
         <RulesSection />
