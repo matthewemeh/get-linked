@@ -175,8 +175,8 @@ const Contact = () => {
             type='text'
             inputRef={firstNameRef}
             placeholder='First Name'
-            extraLabelClasses='phones:mt-[30px]'
-            extraInputClasses='phones:px-6 phones:!mt-0'
+            extraInputClasses='!mt-0 phones:px-6'
+            extraLabelClasses='mt-[34px] phones:mt-[30px]'
           />
 
           <FormInput
@@ -184,8 +184,8 @@ const Contact = () => {
             inputMode='email'
             placeholder='Email'
             inputRef={emailRef}
-            extraInputClasses='phones:px-6 phones:!mt-0'
-            extraLabelClasses='mt-[42px] phones:mt-[25px]'
+            extraInputClasses='!mt-0 phones:px-6'
+            extraLabelClasses='mt-[34px] mt-[42px] phones:mt-[25px]'
           />
 
           <FormInput
@@ -194,7 +194,7 @@ const Contact = () => {
             inputMode='tel'
             inputRef={phoneRef}
             placeholder='Phone Number'
-            extraInputClasses='phones:px-6 phones:!mt-0'
+            extraInputClasses='!mt-0 phones:px-6'
             extraLabelClasses='mt-[42px] phones:mt-[25px]'
           />
 
