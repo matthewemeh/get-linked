@@ -185,7 +185,7 @@ const Contact = () => {
             placeholder='Email'
             inputRef={emailRef}
             extraInputClasses='!mt-0 phones:px-6'
-            extraLabelClasses='mt-[34px] mt-[42px] phones:mt-[25px]'
+            extraLabelClasses='mt-[42px] phones:mt-[25px]'
           />
 
           <FormInput

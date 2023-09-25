@@ -2,12 +2,12 @@ import { useContext, useEffect, useMemo, useState } from 'react';
 
 import Logo from './Logo';
 import NavLink from './NavLink';
+import Overlay from './Overlay';
 import ButtonLink from './ButtonLink';
 import CloseButton from './CloseButton';
 
 import { AppContext } from '../pages/_app';
 import { addClass, removeClass } from '../public/utils';
-import Overlay from './Overlay';
 
 const Navigation = () => {
   const [mobileNavOpened, setMobileNavOpened] = useState<boolean>(false);
@@ -15,7 +15,7 @@ const Navigation = () => {
   const showNav: boolean = useMemo(() => {
     return !(
       (currentRoute === '/contact' || currentRoute === '/register') &&
-      screenWidth < MOBILE_BREAKPOINT
+      screenWidth <= MOBILE_BREAKPOINT
     );
   }, [currentRoute, screenWidth]);
 
