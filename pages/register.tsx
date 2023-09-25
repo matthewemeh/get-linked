@@ -208,8 +208,8 @@ const Register = () => {
               label="Team's Name"
               inputRef={teamNameRef}
               placeholder='Enter the name of your group'
-              extraInputClasses='!py-[15px] !px-[25px] placeholder:!text-[rgba(255,255,255,0.25)]'
               extraLabelClasses='phones:col-start-1 phones:col-end-3'
+              extraInputClasses='!py-[15px] !px-[25px] !mt-[11px] phones:!mt-1.5 placeholder:!text-[rgba(255,255,255,0.25)]'
             />
 
             <FormInput
@@ -219,8 +219,8 @@ const Register = () => {
               inputMode='tel'
               inputRef={phoneRef}
               placeholder='Enter your phone number'
-              extraInputClasses='!py-[15px] !px-[25px] placeholder:!text-[rgba(255,255,255,0.25)]'
               extraLabelClasses='phones:col-start-1 phones:col-end-3'
+              extraInputClasses='!py-[15px] !px-[25px] !mt-[11px] phones:!mt-1.5 placeholder:!text-[rgba(255,255,255,0.25)]'
             />
 
             <FormInput
@@ -229,8 +229,8 @@ const Register = () => {
               inputMode='email'
               inputRef={emailRef}
               placeholder='Enter your email address'
-              extraInputClasses='!py-[15px] !px-[25px] placeholder:!text-[rgba(255,255,255,0.25)]'
               extraLabelClasses='phones:col-start-1 phones:col-end-3'
+              extraInputClasses='!py-[15px] !px-[25px] !mt-[11px] phones:!mt-1.5 placeholder:!text-[rgba(255,255,255,0.25)]'
             />
 
             <FormInput
@@ -238,8 +238,8 @@ const Register = () => {
               label='Project Topic'
               inputRef={projectTopicRef}
               placeholder='What is your group project topic'
-              extraInputClasses='!py-[15px] !px-[25px] placeholder:!text-[rgba(255,255,255,0.25)]'
               extraLabelClasses='phones:col-start-1 phones:col-end-3'
+              extraInputClasses='!py-[15px] !px-[25px] !mt-[11px] phones:!mt-1.5 placeholder:!text-[rgba(255,255,255,0.25)]'
             />
 
             <Dropdown
