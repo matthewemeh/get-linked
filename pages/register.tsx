@@ -115,7 +115,7 @@ const Register = () => {
         <title>Get Linked - Register</title>
       </Head>
 
-      <main className='relative flex pr-[7.22vw] mb-[57px] phones:flex-col phones:px-[16vw] phones:pt-6'>
+      <main className='relative overflow-x-clip flex pr-[7.22vw] mb-[57px] phones:flex-col phones:px-[16vw] phones:pt-6'>
         <StarPurpleGradient left='8.9vw' top={235} extraClasses='phones:hidden' />
         <StarPurple width={23} height={28} top={734} left='41.4vw' extraClasses='phones:hidden' />
         <StarGrey top={203} right='21.67vw' extraClasses='phones:hidden' />
@@ -246,14 +246,14 @@ const Register = () => {
               setSelectedItem={setSelectedCategory}
               list={categories?.map(({ name }) => name) ?? []}
               selectedValue={selectedCategory || 'Select your category'}
-              extraDropdownClasses="before:absolute before:content-['Category'] before:-top-8 before:left-0"
+              extraDropdownClasses="before:absolute before:content-['Category'] before:-top-8 before:left-0 phones:before:-top-7 medium-phones:col-start-1 medium-phones:col-end-3"
             />
 
             <Dropdown
               setSelectedItem={setSelectedGroupSize}
               selectedValue={selectedGroupSize || 'Select'}
               list={groupSizes?.map((size: string) => size) ?? []}
-              extraDropdownClasses="before:absolute before:content-['Group_Size'] before:-top-8 before:left-0"
+              extraDropdownClasses="before:absolute before:content-['Group_Size'] before:-top-8 before:left-0 phones:before:-top-7 medium-phones:col-start-1 medium-phones:col-end-3"
             />
           </div>
 

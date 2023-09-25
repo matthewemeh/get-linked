@@ -67,7 +67,7 @@ const Contact = () => {
         <title>Get Linked - Contact Us</title>
       </Head>
 
-      <main className='flex justify-between pl-[13.194vw] pr-[14.44vw] relative phones:px-[12.56vw] phones:pt-[111px] phones:pb-[36.44px]'>
+      <main className='overflow-x-clip flex justify-between pl-[13.194vw] pr-[14.44vw] relative phones:px-[12.56vw] phones:pt-[111px] phones:pb-[36.44px]'>
         <StarPurpleGradient left='14.24vw' top={81} extraClasses='phones:hidden' />
         <StarOutline left='8.4vw' top={376} extraClasses='phones:hidden' />
         <StarOutline left='40.42vw' top={410} extraClasses='phones:hidden' />

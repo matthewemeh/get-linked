@@ -71,6 +71,7 @@ module.exports = {
         'small-laptops': { max: '890px' },
         tablets: { max: '768px' },
         phones: { max: '600px' },
+        'medium-phones': { max: '500px' },
         'small-phones': { max: '430px' },
         'x-small-phones': { max: '340px' },
       },

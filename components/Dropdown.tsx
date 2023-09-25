@@ -21,7 +21,7 @@ const Dropdown: React.FC<Props> = ({
       type='button'
       onBlur={() => setDropdownActive(false)}
       onClick={() => setDropdownActive(true)}
-      className={`relative flex justify-between rounded border text-[14px] font-normal w-full bg-[rgba(255,255,255,0.03)] text-white placeholder:text-[rgba(255,255,255,0.25)] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] py-[15px] pl-[27px] pr-5 mt-8 outline-none phones:px-[10px] ${extraDropdownClasses}`}>
+      className={`relative flex items-center justify-between rounded border text-[14px] font-normal w-full bg-[rgba(255,255,255,0.03)] text-white placeholder:text-[rgba(255,255,255,0.25)] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] py-[15px] pl-[27px] pr-5 mt-8 outline-none phones:px-[10px] ${extraDropdownClasses}`}>
       <p className='phones:whitespace-nowrap'>{selectedValue}</p>
       <Image priority alt='' src='/assets/svgs/caret-down.svg' width={10.5} height={6} />
 
